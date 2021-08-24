@@ -1,0 +1,90 @@
+.header {
+  // width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: $dark-color;
+  margin: 0 auto;
+  
+
+  &__container {
+
+      &__link {
+          text-decoration: none;
+      }
+
+      &__title {
+          font-size: 4em;
+          padding: 0.2em 0.4em;
+          color: $white-color;
+          text-decoration: black;
+          margin-left: 0.2em;
+          margin-top: 0.1em;
+
+          &__letter {
+              color: $gold-color;
+              font-size: 3rem;
+              text-decoration: black;
+          }
+      }    
+  }
+  
+
+  &__links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // margin-right: 2em;
+      // margin-top: 0.5em;
+      position: relative;
+      @include media ('>tablet') { 
+      font-size: 1.1em;
+      padding: 0.8em;
+      margin-top: 1em;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+      &__link {
+          display: none;
+          margin: 0 0.8em;
+          color: $grey-color;
+          text-decoration: none;
+          font-size: 1.5em;
+          @include media ('>tablet') { 
+          display: block;
+          margin: 0 0.8em;
+          color: $grey-color;
+          text-decoration: none;
+          background: linear-gradient(to top, $white-color 0%, $white-color 5%, transparent 5.01%) no-repeat;
+          background-size: 0 100%;
+          transition: background-size 0.3s ease-in-out;
+          
+          &:hover {
+              color: $white-color;
+              background-size: 100% 100%;
+              
+              }
+          }
+      }
+
+      &__button {
+          display: block;
+          background-color: $dark-color;
+          border: 1px solid white;
+          color: $white-color;
+          font-size: 2em;
+          // position: absolute;
+          // top: 20px;
+          // right: 10px;
+          
+          @include media('>tablet') {
+              display: none;
+          }
+      }
+  }
+
+ 
+}

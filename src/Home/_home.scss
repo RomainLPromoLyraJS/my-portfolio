@@ -1,0 +1,49 @@
+.home {
+  width: 90%;
+  margin: 0 auto;
+  @include media('>=desktop') {
+      // height: 100%;
+  }
+  
+ 
+  &__title {
+      margin: 1.5em 0 0.2em 0;
+      font-size: 2em;
+      color: $grey-color;
+      font-weight: bold;
+      text-align: start;
+
+      &__description {
+          color: $grey-color;
+          font-size: 1.5em;
+          margin: 0.3em 0;
+          font-style: italic; 
+          display: flex;
+          
+          @include media('>=desktop') {
+              max-width: 25%;
+          }
+
+          &::after {
+              content: "";
+              flex: 1 1;
+              border-bottom: 2px solid $grey-color;
+              margin: auto;
+              margin-left: 1em;
+              margin-right: 1em;
+          }
+      }
+
+      &__specialisation {
+          margin: 2em 0;
+          font-size: 3em;
+          color: $gold-color;
+          font-weight: bold;
+          text-align: center;
+          @include media('>=desktop') {
+              font-size: 3.5em;
+          }
+      }
+  }
+}
+

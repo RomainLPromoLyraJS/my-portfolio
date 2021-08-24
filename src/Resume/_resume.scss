@@ -1,0 +1,227 @@
+.resume {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+
+  &__title {
+      margin-top: 0.5em;
+      font-size: 3em;
+      color: $gold-color;
+      font-weight: bold;
+  }
+
+  &__subtitle {
+      color: $grey-color;
+      font-size: 1.5em;
+      margin: 0.5em 0;
+      font-style: italic; 
+      display: flex;
+      max-width: 100%;
+      text-align: start;
+      @include media('>=desktop') {
+          max-width: 40%;
+      }
+
+      &::after {
+          content: "";
+          flex: 1 1;
+          border-bottom: 2px solid $grey-color;
+          margin: auto;
+          margin-left: 1em;
+      }
+  }
+
+  &__formation {
+
+      &__title {
+          font-size: 2.5em;
+          color: $grey-color;
+          font-weight: bold;
+          margin-top: 1em;
+          @include media('>=desktop') {
+              margin-top: 2em;
+          }
+      }
+  }
+
+  &__skills {
+      display: flex;
+      justify-content: center;
+      margin-top: 3em;
+      @include media('>=desktop') {
+          justify-content: space-around;
+          margin-top: 4em;
+      }
+      
+      
+      
+
+     &__lists {
+          display: flex;
+          align-items: center;
+          flex-flow: wrap column;
+
+          &__subtitle {
+              margin: 0 0 1.5em 0;
+              font-size: 1.8em;
+              color: $white-color;
+              font-weight: bold;
+              text-align: center;
+              
+          }
+
+          &__list {
+              border-right: 2px solid grey;
+              padding: 0 0.7em;
+              @include media('>=desktop') {
+                  width: 100%;
+                  border-right: none;
+              }
+
+              &__last {
+                  padding: 0 0.7em;
+                  
+              }
+              
+              
+              
+              
+  
+              &__element {
+                  margin: 1em 0 0 0;
+                  font-size: 1.5em;
+                  color: $grey-color;
+                  font-style: italic;
+                  text-align: center;
+                  
+              }
+          }
+
+      }
+     
+  }
+  
+  &__experience {
+
+      &__title {
+          font-size: 2.5em;
+          color: $grey-color;
+          font-weight: bold;
+          margin-top: 1.5em;
+          @include media('>=desktop') {
+              margin-top: 2.5em;
+          }
+      }
+
+      &__article {
+          
+          &__title {
+              font-size: 2em;
+              font-weight: bold;
+              margin: 1em 0;
+              color: $white-color;
+              @include media('>=tablet') {
+              margin: 1.5em 0 1.2em 0;
+              }
+
+          }
+
+          &__description {
+              color: $grey-color;
+              font-size: 1.5em;
+              margin: 1.5em 0;
+              font-style: italic;
+              // text-align: center;
+              
+          }
+
+          &__link {
+              color: $grey-color;
+              font-size: 1.6em;
+              text-decoration:underline;
+              line-height: 1.5em;
+              text-transform: uppercase;
+              font-style: italic;
+              background: linear-gradient(to top, $white-color 0%, $white-color 5%, transparent 5.01%) no-repeat;
+              background-size: 0 100%;
+              transition: background-size 0.2s;
+              
+              &:hover {
+                  color: $white-color;
+                  transition: 0.5s ease-in-out;
+                  background-size: 100% 100%;
+                  
+              }
+          }
+      }
+  }
+
+  &__training {
+
+      &__title {
+          font-size: 2.5em;
+          color: $grey-color;
+          font-weight: bold;
+          margin-top: 1.5em;
+          @include media('>=desktop') {
+              margin-top: 2.5em;
+          }
+      }
+
+      &__article {
+
+          &__title {
+              font-size: 1.8em;
+              font-weight: bold;
+              margin: 1em 0;
+              color: $white-color;
+              @include media('>=tablet') {
+                  margin: 1.5em 0 1.2em 0;
+                  }
+          }
+
+          &__description {
+              color: $grey-color;
+              font-size: 1.5em;
+              margin: 1em 0;
+              font-style: italic; 
+          }
+      }
+  }
+
+  &__links {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin: 0.5em 0 2.5em 0;
+      @include media('>=tablet') {
+       margin: 1em 0 3em 0;       
+      }
+      
+      &__link {
+          color: $gold-color;            
+      }
+
+      &__button {
+          font-size: 1.3em;
+          padding: 1em 3em;
+          color: $gold-color;
+          background-color: $dark-color;
+          border-radius: 50px;
+          border: 1px solid $gold-color;
+          transition: 0.3s ease-in-out;
+          @include media('>=desktop') {
+              margin: 2.5em 0 1.5em 0;
+          }
+          
+
+          &:hover {
+              background-color: $white-color;
+              color: $dark-color;
+              cursor: pointer;
+          }
+      }
+  }
+}

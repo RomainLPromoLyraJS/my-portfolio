@@ -1,0 +1,182 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+
+  &__maintitle {
+    &__title {
+      margin-top: 0.5em;
+      font-size: 3em;
+      color: $gold-color;
+      font-weight: bold;
+    }
+
+    &__subtitle {
+      color: $grey-color;
+      font-size: 1.5em;
+      margin: 0.5em 0;
+      font-style: italic;
+      display: flex;
+      max-width: 100%;
+      @include media('>=desktop') {
+        max-width: 28%;
+      }
+
+      &::after {
+        content: "";
+        flex: 1 1;
+        border-bottom: 2px solid $grey-color;
+        margin: auto;
+        margin-left: 1em;
+      }
+    }
+  }
+
+  &__form {
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $gold-color;
+    border-radius: 50px;
+    padding: 1em;
+    @include media('>=desktop') {
+      width: 80%;
+      margin: 3em auto;
+      padding: 2em;
+    }
+
+    &__section {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include media('>=desktop') {
+        flex-direction: row;
+        margin-bottom: 1em;
+        width: 100%;
+        margin: 1em auto;
+      }
+
+      &__label {
+        font-size: 1.5em;
+        color: $white-color;
+        margin-bottom: 1em;
+        @include media('>=desktop') {
+          width: 20%;
+          
+        }
+      }
+
+      &__input {
+        background-color: $dark-color;
+        border: 2px solid $gold-color;
+        border-radius: 30px;
+        font-size: 1.2em;
+        color: $white-color;
+        width: 90%;
+        padding: 0.6em;
+        @include media('>=desktop') {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+
+      &__textarea {
+        background-color: $dark-color;
+        border: 2px solid $gold-color;
+        font-size: 1.2em;
+        color: $white-color;
+        border-radius: 40px;
+        // resize: vertical;
+        // min-height: 250px;
+        width: 90%;
+        padding: 0.6em;
+        @include media('>=desktop') {
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 1em;
+        }
+
+        &::placeholder {
+          color: $grey-color;
+          font-size: 1.1rem;
+          text-align: center;
+          padding-top: 1em;
+        }
+      }
+
+      &__button {
+        font-size: 1.3em;
+        padding: 1em 3em;
+        color: $gold-color;
+        background-color: $dark-color;
+        border-radius: 50px;
+        border: 1px solid $gold-color;
+        transition: 0.3s ease-in-out;
+        @include media('>=desktop') {
+          margin-top: 2em;
+        }
+
+        &:hover {
+          background-color: $white-color;
+          color: $dark-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.not-mail {
+  display: none;
+  color: #ff4d4d;
+  transform-origin: 50% 50%;
+}
+@keyframes dongle {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(-10px, 0px);
+  }
+  20% {
+    transform: translate(10px, 0px);
+  }
+  30% {
+    transform: translate(-10px, 0px);
+  }
+  40% {
+    transform: translate(10px, 0px);
+  }
+  50% {
+    transform: translate(-10px, 0px);
+  }
+  60% {
+    transform: translate(10px, 0px);
+  }
+  70% {
+    transform: translate(-10px, 0px);
+  }
+  80% {
+    transform: translate(10px, 0px);
+  }
+  90% {
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.form-message {
+  margin-top: 10px;
+  padding: 12px;
+  opacity: 0;
+  transition: 0.2s ease;
+  color: black;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
+}

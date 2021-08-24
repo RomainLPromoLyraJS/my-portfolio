@@ -1,0 +1,40 @@
+.hamburger {
+
+  &__list {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      &__items {
+          border-bottom: 1px solid $grey-color;
+          padding: 1em 0;
+          margin-right: 1em;
+          width: 100%;
+          text-align: center;
+
+          &:nth-child(1) {
+              border-top: 1px solid $grey-color;
+              margin-top: 1em;
+          }
+      }  
+      
+      &__button {
+          display: block;
+          border: 1px solid white;
+          color: $white-color;
+          font-size: 2em;
+          background-color: $dark-color;
+          // position: absolute;
+          // top: 1em;
+          // right: 1em;
+          
+          @include media('>tablet') {
+              display: none;
+          }
+      }
+  }
+
+
+
+} 
