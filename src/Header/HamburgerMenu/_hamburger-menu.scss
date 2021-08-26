@@ -9,7 +9,7 @@
     background-color: $dark-color;
     color: $white-color;
     width: 100%;
-    z-index: 1;
+    z-index: 20;
     @include media('>tablet') {
         display: none;
     }
@@ -20,21 +20,35 @@
         justify-content: center;
         align-items: center;
         position: fixed;
-        left: 0;
-        right: 0;
+        right: -100vw;
         bottom: 0;
+        width: 0;
         height: 100vh;
         padding: 2rem;
-        background-color: $dark-color;
+        background-color: $white-color;
+        visibility: hidden;
+        transition: all 0.8s ease-in-out;
         
 
         &__link {
-            // padding: 0 0.3rem;
-            padding: 3rem;
-            color: inherit;
+            padding: 1.5rem;
+            color: $dark-color;
             display: block;
             font-size: 2em;
             text-decoration: none;
+            
+            &::after {
+                content: "";
+                display: block;
+                margin: 1em auto;
+                width: 5vw;
+                height: 1px;
+                background: $dark-color;
+            }
+
+            &:last-child::after {
+                display: none;
+            }
 
         }
     }
@@ -46,8 +60,6 @@
         border: none;
         color: inherit;
         cursor: pointer;
-        top: 1rem;
-        right: 1rem;
     }
 } 
 
@@ -60,7 +72,6 @@
     position: relative;
     border-radius: 3px;
     background: #fff;
-    // color: #fff;
 }
 
 .hamburger__button__bar::before,
@@ -68,6 +79,7 @@
     content: "";
     position: absolute;
     left: 0;
+    transition: 0.5s all ease-in-out;
 }
 
 .hamburger__button__bar::before {
@@ -79,3 +91,26 @@
     transform: translateY(12px);
 }
 
+.show-hamburger .hamburger__links {
+    right: 0;
+    width: 100vw;
+    visibility: visible;
+}
+
+.show-hamburger .hamburger__button__bar {
+    background: transparent;
+}
+
+.show-hamburger .hamburger__button__bar::before {
+    transform: rotate(45deg);
+    background: black;
+}
+
+.show-hamburger .hamburger__button__bar::after {
+    transform: rotate(-45deg);
+    background: black;
+}
+
+.show-hamburger .slide-link1 {
+    transition: all 1s ease-out;
+}
