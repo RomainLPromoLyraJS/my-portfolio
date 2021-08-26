@@ -17,12 +17,14 @@ const Home = () => {
       </Fade>
       <div className="home__title__specialisation">
         <div className="home__title__specialisation__content">
-          <Fade bottom>
+          <Fade left>
             <h1 className="home__title__specialisation__content__text">Développeur Javascript Fullstack spécialisé en ReactJS.</h1>
           </Fade>
         </div>
         <div className="home__title__specialisation__content__img">
-          <img className="home__title__specialisation__content__img__picture" src={MyPicture} alt="Romain Lafosse Développeur" />
+          <Fade right>
+            <img className="home__title__specialisation__content__img__picture" src={MyPicture} alt="Romain Lafosse Développeur" />
+          </Fade>
         </div>
 
       </div>

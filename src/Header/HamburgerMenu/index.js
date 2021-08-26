@@ -1,25 +1,26 @@
 import { React, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const HamburgerMenu = () => {
 
   const [isHamburgerMenu, setHamburgerMenu] = useState(false);
 
-  const showHamburgerMenu = () => setHamburgerMenu(!isHamburgerMenu);
+  const handleShowHamburgerMenu = () => setHamburgerMenu(!isHamburgerMenu);
 
   return (
     <nav className="hamburger">
       {isHamburgerMenu && (
-        <ul className="hamburger__list">
-          <li className="hamburger__list__items">Qui suis-je</li>
-          <li className="hamburger__list__items">Mon CV</li>
-          <li className="hamburger__list__items">Mes Projets</li>
-          <li className="hamburger__list__items">Contact</li>
-        </ul>
+        <div className="hamburger__links">
+          <NavLink to="/about" className="hamburger__links__link">Qui-suis-je ?</NavLink>
+          <NavLink to="/resume" className="hamburger__links__link">Mon CV</NavLink>
+          <NavLink to="/projects" className="hamburger__links__link">Mes projets</NavLink>
+          <NavLink to="/contact" className="hamburger__links__link">Contact</NavLink>
+        </div>
       )}
 
-      <button className={isHamburgerMenu ? "hamburger__list__button active" : "hamburger__list__button"}
-        onClick={showHamburgerMenu}>
-        <i className="fas fa-bars"></i>
+      <button className="hamburger__button"
+        onClick={handleShowHamburgerMenu}>
+        <span className="hamburger__button__bar"></span>
       </button>
     </nav>
   );
