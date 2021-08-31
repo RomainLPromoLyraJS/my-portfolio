@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 //Import React and packages
 import React from 'react';
@@ -39,7 +40,7 @@ const Projects = () => {
         </div>
         <div className="projects__section__project__links">
           <Fade right>
-            <a className="projects__section__project__links__link" href="#" target="_blank">Outsiders<img className="projects__section__project__links__img" src={OutsidersImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+            <a className="projects__section__project__links__link" href="https://github.com/RomainLPromoLyraJS/Outsiders" target="_blank">Outsiders<img className="projects__section__project__links__img" src={OutsidersImg} alt="site d'une recette de crêpes en ReactJS" /></a>
           </Fade>
         </div>
       </div>
@@ -62,7 +63,7 @@ const Projects = () => {
         </div>
         <div className="projects__section__project__links">
           <Fade right>
-            <a className="projects__section__project__links__link" href="#" target="_blank">Credit Card<img className="projects__section__project__links__img" src={CreditCardImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+            <a className="projects__section__project__links__link" href="https://credit-card-for-fun.netlify.app/" target="_blank">Credit Card<img className="projects__section__project__links__img" src={CreditCardImg} alt="site d'une recette de crêpes en ReactJS" /></a>
           </Fade>
         </div>
       </div>
@@ -85,7 +86,7 @@ const Projects = () => {
         </div>
         <div className="projects__section__project__links">
           <Fade right>
-            <a className="projects__section__project__links__link" href="#" target="_blank">TodoList<img className="projects__section__project__links__img" src={TodolistImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+            <a className="projects__section__project__links__link" href="https://todolist-in-reactjs.netlify.app/" target="_blank">TodoList<img className="projects__section__project__links__img" src={TodolistImg} alt="site d'une recette de crêpes en ReactJS" /></a>
           </Fade>
         </div>
       </div>
@@ -108,7 +109,7 @@ const Projects = () => {
         </div>
         <div className="projects__section__project__links">
           <Fade right>
-            <a className="projects__section__project__links__link" href="#" target="_blank">Convertisseur<img className="projects__section__project__links__img" src={ConverterImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+            <a className="projects__section__project__links__link" href="https://my-currency-converter.netlify.app/" target="_blank">Convertisseur<img className="projects__section__project__links__img" src={ConverterImg} alt="site d'une recette de crêpes en ReactJS" /></a>
           </Fade>
         </div>
       </div>
@@ -131,14 +132,14 @@ const Projects = () => {
         </div>
         <div className="projects__section__project__links">
           <Fade right>
-            <a className="projects__section__project__links__link" href="#" target="_blank">Recette de crêpes<img className="projects__section__project__links__img" src={CrepeImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+            <a className="projects__section__project__links__link" href="https://crepes-recipe.netlify.app/" target="_blank">Recette de crêpes<img className="projects__section__project__links__img" src={CrepeImg} alt="site d'une recette de crêpes en ReactJS" /></a>
           </Fade>
         </div>
       </div>
       <div className="projects__section">
         <div className="projects__section__project">
           <Fade left>
-            <p className="projects__section__project__description">Une application de météo dynamique permettant d'avoir la température et le temps qu'il fait.</p>
+            <p className="projects__section__project__description">Une application de météo dynamique permettant d'avoir la température et le temps qu'il fait (en cours de création).</p>
             <ul className="projects__section__project__lists">Technologies
               <li className="projects__section__project__lists__first">- HTML / CSS</li>
               <li className="projects__section__project__lists__list">- Javascript</li>
@@ -147,7 +148,7 @@ const Projects = () => {
           </Fade>
           <Fade bottom>
             <a className="projects__section__project__button__a"
-              href="https://github.com/RomainLPromoLyraJS/Outsiders" target="_blank" rel="noreferrer">
+              href="#" target="_blank" rel="noreferrer">
               <button className="projects__section__project__button in-progress">en cours</button>
             </a>
           </Fade>
