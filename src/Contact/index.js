@@ -1,4 +1,6 @@
+//Import React and packages
 import React, { useState } from 'react';
+import Fade from 'react-reveal/Fade';
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -90,106 +92,111 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact__maintitle">
-        <h1 className="contact__maintitle__title">Contact</h1>
-        <h2 className="contact__maintitle__subtitle">Vos coordonnées</h2>
+        <Fade top>
+          <h1 className="contact__maintitle__title">Contact</h1>
+          <h2 className="contact__maintitle__subtitle">Vos coordonnées</h2>
+        </Fade>
       </div>
-      <form className="contact__form" action="">
-        <div className="contact__form__section">
-          <label className="contact__form__section__label" htmlFor="name">Votre nom *</label>
-          <input
-            className="contact__form__section__input"
-            type="text"
-            name="name"
-            id="name"
-            onChange={(event) => setName(event.target.value)}
-            value={name}
-            autoComplete="off"
-          />
-        </div>
-        <div className="contact__form__section">
-          <label className="contact__form__section__label" htmlFor="company">Votre société</label>
-          <input
-            className="contact__form__section__input"
-            type="text"
-            name="company"
-            id="company"
-            onChange={(event) => setCompany(event.target.value)}
-            value={company}
-            autoComplete="off"
-          />
-        </div>
-        <div className="contact__form__section">
-          <label className="contact__form__section__label" htmlFor="phone">Votre téléphone</label>
-          <input
-            className="contact__form__section__input"
-            type="text"
-            name="phone"
-            id="phone"
-            onChange={(event) => setPhone(event.target.value)}
-            value={phone}
-            autoComplete="off"
-          />
-        </div>
-        <div className="contact__form__section">
-          <label className="contact__form__section__label" htmlFor="email">Votre e-mail *</label>
-          <input
-            className="contact__form__section__input"
-            type="email"
-            name="email"
-            id="email"
-            onChange={(event) => setEmail(event.target.value)}
-            value={email}
-            autoComplete="off"
-          />
-        </div>
-        < div className={
-          displayEmailError ? "not-mail" : "toto"
-        }
-          style={
-            displayEmailError ? {
-              display: "block", animation: "dongle 1s"
-            } : {
-              display: "none"
-            }
-          } > Email non valide</div>
-        <div className="contact__form__section contact__form__section__custom">
-          <label className="contact__form__section__label" htmlFor="message">Votre message *</label>
-          <textarea
-            className="contact__form__section__textarea"
-            name="message"
-            id="message"
-            cols="30" rows="10"
-            placeholder="Taper ici votre message pour plus d'informations..."
-            onChange={(event) => setMessage(event.target.value)}
-            value={message}
-          />
-        </div>
-        < div className={
-          displayEmailError ? "not-mail" : "toto"
-        }
-          style={
-            displayEmailError ? {
-              display: "block", animation: "dongle 1s"
-            } : {
-              display: "none"
-            }
-          } > Message non rempli</div>
-        <div className="contact__form__section">
-          <button
-            className="contact__form__section__button"
-            type="submit"
-            onClick={handleSubmit}
-          >Valider</button>
-        </div>
-        {/* 
+      <Fade bottom>
+        <form className="contact__form" action="">
+          <div className="contact__form__section">
+
+            <label className="contact__form__section__label" htmlFor="name">Votre nom *</label>
+            <input
+              className="contact__form__section__input"
+              type="text"
+              name="name"
+              id="name"
+              onChange={(event) => setName(event.target.value)}
+              value={name}
+              autoComplete="off"
+            />
+          </div>
+          <div className="contact__form__section">
+            <label className="contact__form__section__label" htmlFor="company">Votre société</label>
+            <input
+              className="contact__form__section__input"
+              type="text"
+              name="company"
+              id="company"
+              onChange={(event) => setCompany(event.target.value)}
+              value={company}
+              autoComplete="off"
+            />
+          </div>
+          <div className="contact__form__section">
+            <label className="contact__form__section__label" htmlFor="phone">Votre téléphone</label>
+            <input
+              className="contact__form__section__input"
+              type="text"
+              name="phone"
+              id="phone"
+              onChange={(event) => setPhone(event.target.value)}
+              value={phone}
+              autoComplete="off"
+            />
+          </div>
+          <div className="contact__form__section">
+            <label className="contact__form__section__label" htmlFor="email">Votre e-mail *</label>
+            <input
+              className="contact__form__section__input"
+              type="email"
+              name="email"
+              id="email"
+              onChange={(event) => setEmail(event.target.value)}
+              value={email}
+              autoComplete="off"
+            />
+          </div>
+          < div className={
+            displayEmailError ? "not-mail" : "toto"
+          }
+            style={
+              displayEmailError ? {
+                display: "block", animation: "dongle 1s"
+              } : {
+                display: "none"
+              }
+            } > Email non valide</div>
+          <div className="contact__form__section contact__form__section__custom">
+            <label className="contact__form__section__label" htmlFor="message">Votre message *</label>
+            <textarea
+              className="contact__form__section__textarea"
+              name="message"
+              id="message"
+              cols="30" rows="10"
+              placeholder="Taper ici votre message pour plus d'informations..."
+              onChange={(event) => setMessage(event.target.value)}
+              value={message}
+            />
+          </div>
+          < div className={
+            displayEmailError ? "not-mail" : "toto"
+          }
+            style={
+              displayEmailError ? {
+                display: "block", animation: "dongle 1s"
+              } : {
+                display: "none"
+              }
+            } > Message non rempli</div>
+          <div className="contact__form__section">
+            <button
+              className="contact__form__section__button"
+              type="submit"
+              onClick={handleSubmit}
+            >Valider</button>
+          </div>
+          {/* 
                     Condition for displaying the error. Explanation:
                      error && error means if :
                     error exist (the first one) --> (error && error)
                     then = && --> (error && error)
                     use the second error here (who is the same that the first one) --> (error && error) 
                     */}
-        <div className="form-message">{error && error}</div>
-      </form>
+          <div className="form-message">{error && error}</div>
+        </form>
+      </Fade>
     </div>
   );
 };
