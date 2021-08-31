@@ -98,6 +98,7 @@
         border-radius: 50px;
         border: 1px solid $gold-color;
         cursor: pointer;
+        text-transform: capitalize;
         transition: 0.3s ease-in-out;
         @include media(">=tablet") {
           width: 300px;
@@ -157,4 +158,9 @@
       }
     }
   }
+}
+
+.in-progress {
+  border: 1px solid rgb(170, 13, 13);
+  color: rgb(170, 13, 13);
 }
