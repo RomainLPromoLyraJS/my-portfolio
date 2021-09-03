@@ -1,47 +1,50 @@
 /* -- Breakpoints -- */
-@import './breakpoints';
+@import "./breakpoints";
 
 /* -- Variables -- */
-@import './vars';
+@import "./vars";
 
 /* -- Fonts -- */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Mate+SC&family=Noto+Sans+JP:wght@300;400;700');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Mate+SC&family=Noto+Sans+JP:wght@300;400;700");
 
 /* -- Components styles -- */
-@import '../App/app';
-@import '../Header/header';
-@import '../Header/HamburgerMenu/hamburger-menu';
-@import '../Home/home';
-@import '../About/about';
-@import '../Resume/resume';
-@import '../Projects/projects';
-@import '../Contact/contact';
-@import '../Footer/footer';
+@import "../App/app";
+@import "../Header/header";
+@import "../Header/HamburgerMenu/hamburger-menu";
+@import "../Home/home";
+@import "../About/about";
+@import "../Resume/resume";
+@import "../Projects/projects";
+@import "../Contact/contact";
+@import "../Footer/footer";
 
 /* -- Base CSS Project -- */
 
 // the outline property is used here to prevent the blue outline of buttons on click by default.
 * {
   outline: 0;
-  }
+}
 
 html,
 body {
   height: 100%;
   margin: 0;
-  
-  // background-color: $dark-color;
+  background-color: $dark-color;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
 h1 {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-h2, h3, h4, h5, h6 {
-  font-family: 'Mate SC', serif;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Mate SC", serif;
 }

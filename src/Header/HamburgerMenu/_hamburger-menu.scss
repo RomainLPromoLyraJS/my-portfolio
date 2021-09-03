@@ -1,113 +1,109 @@
 .hamburger {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1em;
+  // position: fixed;
+  min-height: 75px;
+  background-color: $dark-color;
+  color: $white-color;
+  width: 100%;
+  z-index: 20;
+  @include media(">tablet") {
+    display: none;
+  }
+
+  &__links {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin-right: 1em;
-    // position: fixed;
-    min-height: 75px;
-    background-color: $dark-color;
-    color: $white-color;
-    width: 100%;
-    z-index: 20;
-    @include media('>tablet') {
-        display: none;
+    position: fixed;
+    right: -100vw;
+    bottom: 0;
+    width: 0;
+    height: 100vh;
+    padding: 1.1rem;
+    background-color: $white-color;
+    visibility: hidden;
+    transition: all 0.8s ease-in-out;
+
+    &__link {
+      padding: 1.5rem;
+      color: $dark-color;
+      display: block;
+      font-size: 2em;
+      text-decoration: none;
+
+      //   &::after {
+      //     content: "";
+      //     display: block;
+      //     margin: 0 auto;
+      //     width: 10vw;
+      //     height: 1px;
+      //     background: $dark-color;
+      //   }
+
+      // &:last-child::after {
+      //     display: none;
+      // }
     }
+  }
 
-    &__links {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        right: -100vw;
-        bottom: 0;
-        width: 0;
-        height: 100vh;
-        padding: 1.1rem;
-        background-color: $white-color;
-        visibility: hidden;
-        transition: all 0.8s ease-in-out;
-        
+  &__button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+  }
+}
 
-        &__link {
-            padding: 1.5rem;
-            color: $dark-color;
-            display: block;
-            font-size: 2em;
-            text-decoration: none;
-            
-            &::after {
-                content: "";
-                display: block;
-                margin: 0 auto;
-                width: 10vw;
-                height: 1px;
-                background: $dark-color;
-            }
-
-            &:last-child::after {
-                display: none;
-            }
-
-        }
-    }
-
-    &__button {
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: none;
-        color: inherit;
-        cursor: pointer;
-    }
-} 
-
-.hamburger__button__bar, 
+.hamburger__button__bar,
 .hamburger__button__bar::before,
 .hamburger__button__bar::after {
-    display: block;
-    width: 40px;
-    height: 3px;
-    position: relative;
-    border-radius: 3px;
-    background: #fff;
+  display: block;
+  width: 40px;
+  height: 3px;
+  position: relative;
+  border-radius: 3px;
+  background: #fff;
 }
 
 .hamburger__button__bar::before,
 .hamburger__button__bar::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    transition: 0.5s all ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: 0.5s all ease-in-out;
 }
 
 .hamburger__button__bar::before {
-    transform: translateY(-12px);
-    
+  transform: translateY(-12px);
 }
 
 .hamburger__button__bar::after {
-    transform: translateY(12px);
+  transform: translateY(12px);
 }
 
 .show-hamburger .hamburger__links {
-    right: 0;
-    width: 100vw;
-    visibility: visible;
+  right: 0;
+  width: 100vw;
+  visibility: visible;
 }
 
 .show-hamburger .hamburger__button__bar {
-    background: transparent;
+  background: transparent;
 }
 
 .show-hamburger .hamburger__button__bar::before {
-    transform: rotate(45deg);
-    background: black;
+  transform: rotate(45deg);
+  background: black;
 }
 
 .show-hamburger .hamburger__button__bar::after {
-    transform: rotate(-45deg);
-    background: black;
+  transform: rotate(-45deg);
+  background: black;
 }
-

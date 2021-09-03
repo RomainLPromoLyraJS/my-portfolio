@@ -10,6 +10,7 @@ import CrepeImg from '../assets/img/crepes.png';
 import TodolistImg from '../assets/img/todolist.png';
 import ConverterImg from '../assets/img/converter.png';
 import CreditCardImg from '../assets/img/credit-card.png';
+import WeatherImg from '../assets/img/weather.jpg';
 
 
 const Projects = () => {
@@ -40,7 +41,7 @@ const Projects = () => {
         </div>
         <div className="projects__section__project__links">
           <Fade right>
-            <a className="projects__section__project__links__link" href="https://github.com/RomainLPromoLyraJS/Outsiders" target="_blank">Outsiders<img className="projects__section__project__links__img" src={OutsidersImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+            <a className="projects__section__project__links__link" href="https://github.com/RomainLPromoLyraJS/Outsiders" target="_blank">Outsiders<img className="projects__section__project__links__img" src={OutsidersImg} alt="site d'une plateforme regroupant des personnes souhaitant pratiquer des sports outdoor"/></a>
           </Fade>
         </div>
       </div>
@@ -63,7 +64,7 @@ const Projects = () => {
         </div>
         <div className="projects__section__project__links">
           <Fade right>
-            <a className="projects__section__project__links__link" href="https://credit-card-for-fun.netlify.app/" target="_blank">Credit Card<img className="projects__section__project__links__img" src={CreditCardImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+            <a className="projects__section__project__links__link" href="https://credit-card-for-fun.netlify.app/" target="_blank">Credit Card<img className="projects__section__project__links__img" src={CreditCardImg} alt="site d'une animation de carte bancaire." /></a>
           </Fade>
         </div>
       </div>
@@ -86,7 +87,7 @@ const Projects = () => {
         </div>
         <div className="projects__section__project__links">
           <Fade right>
-            <a className="projects__section__project__links__link" href="https://todolist-in-reactjs.netlify.app/" target="_blank">TodoList<img className="projects__section__project__links__img" src={TodolistImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+            <a className="projects__section__project__links__link" href="https://todolist-in-reactjs.netlify.app/" target="_blank">TodoList<img className="projects__section__project__links__img" src={TodolistImg} alt="site d'une todo liste." /></a>
           </Fade>
         </div>
       </div>
@@ -109,7 +110,7 @@ const Projects = () => {
         </div>
         <div className="projects__section__project__links">
           <Fade right>
-            <a className="projects__section__project__links__link" href="https://my-currency-converter.netlify.app/" target="_blank">Convertisseur<img className="projects__section__project__links__img" src={ConverterImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+            <a className="projects__section__project__links__link" href="https://my-currency-converter.netlify.app/" target="_blank">Convertisseur<img className="projects__section__project__links__img" src={ConverterImg} alt="site d'un convertisseur de monnaie." /></a>
           </Fade>
         </div>
       </div>
@@ -132,7 +133,7 @@ const Projects = () => {
         </div>
         <div className="projects__section__project__links">
           <Fade right>
-            <a className="projects__section__project__links__link" href="https://crepes-recipe.netlify.app/" target="_blank">Recette de crêpes<img className="projects__section__project__links__img" src={CrepeImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+            <a className="projects__section__project__links__link" href="https://crepes-recipe.netlify.app/" target="_blank">Recette de crêpes<img className="projects__section__project__links__img" src={CrepeImg} alt="site d'une recette de crêpes savoureuses." /></a>
           </Fade>
         </div>
       </div>
@@ -155,7 +156,7 @@ const Projects = () => {
         </div>
         <div className="projects__section__project__links">
           <Fade right>
-            <a className="projects__section__project__links__link" href="#" target="_blank">Weather<img className="projects__section__project__links__img" src={OutsidersImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+            <p className="projects__section__project__links__link" href="#" target="_blank">Weather<img className="projects__section__project__links__img img-weather" src={WeatherImg} alt="site d'une application météo." /></p>
           </Fade>
         </div>
       </div>
