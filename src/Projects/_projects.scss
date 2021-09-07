@@ -131,7 +131,6 @@
           object-fit: cover;
           border-radius: 20px;
           margin: 1em 0;
-          // border: 1px solid $white-color;
           @include media(">=tablet") {
             height: 255px;
             width: 614px;
@@ -163,8 +162,9 @@
 .in-progress {
   border: 1px solid rgb(170, 13, 13);
   color: rgb(170, 13, 13);
+  cursor: auto;
 }
 
-.img-weather {
-  background-image: black;
+.img-weather:hover {
+  border: none;
 }
