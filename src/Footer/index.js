@@ -9,7 +9,7 @@ const Footer = () => {
 
     <footer className="footer">
       <div className="footer__follow">
-        <p className="footer__follow__text">Follow my work on </p>
+        <p className="footer__follow__text">Follow my work</p>
         <div className="footer__follow__logos">
           <a href="https://www.linkedin.com/in/romain-lafosse/" target="_blank">
             <div className="footer__follow__logos__logo"><FaLinkedin />

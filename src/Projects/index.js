@@ -48,6 +48,29 @@ const Projects = () => {
       <div className="projects__section">
         <div className="projects__section__project">
           <Fade left>
+            <p className="projects__section__project__description">Une application de météo dynamique permettant d'avoir la température et le temps actuels dans le monde entier.</p>
+            <ul className="projects__section__project__lists">Technologies
+              <li className="projects__section__project__lists__first">- HTML / CSS</li>
+              <li className="projects__section__project__lists__list">- Javascript</li>
+              <li className="projects__section__project__lists__list">- ReactJS</li>
+            </ul>
+          </Fade>
+          <Fade bottom>
+            <a className="projects__section__project__button__a"
+              href="https://react-weather-site.netlify.app/" target="_blank" rel="noreferrer">
+              <button className="projects__section__project__button">voir</button>
+            </a>
+          </Fade>
+        </div>
+        <div className="projects__section__project__links">
+          <Fade right>
+            <a className="projects__section__project__links__link" href="https://react-weather-site.netlify.app/" target="_blank">Weather<img className="projects__section__project__links__img" src={WeatherImg} alt="site d'une application météo." /></a>
+          </Fade>
+        </div>
+      </div>
+      <div className="projects__section">
+        <div className="projects__section__project">
+          <Fade left>
             <p className="projects__section__project__description">Une animation de carte de crédit qui change en fonction des deux premiers chiffres.</p>
             <ul className="projects__section__project__lists">Technologies
               <li className="projects__section__project__lists__first">- HTML / CSS</li>
@@ -134,29 +157,6 @@ const Projects = () => {
         <div className="projects__section__project__links">
           <Fade right>
             <a className="projects__section__project__links__link" href="https://crepes-recipe.netlify.app/" target="_blank">Recette de crêpes<img className="projects__section__project__links__img" src={CrepeImg} alt="site d'une recette de crêpes savoureuses." /></a>
-          </Fade>
-        </div>
-      </div>
-      <div className="projects__section">
-        <div className="projects__section__project">
-          <Fade left>
-            <p className="projects__section__project__description">Une application de météo dynamique permettant d'avoir la température et le temps qu'il fait dans le monde entier. (EN COURS DE CREATION)</p>
-            <ul className="projects__section__project__lists">Technologies
-              <li className="projects__section__project__lists__first">- HTML / CSS</li>
-              <li className="projects__section__project__lists__list">- Javascript</li>
-              <li className="projects__section__project__lists__list">- ReactJS</li>
-            </ul>
-          </Fade>
-          <Fade bottom>
-            <p className="projects__section__project__button__a"
-              href="#" target="_blank" rel="noreferrer">
-              <button className="projects__section__project__button in-progress">en cours</button>
-            </p>
-          </Fade>
-        </div>
-        <div className="projects__section__project__links">
-          <Fade right>
-            <p className="projects__section__project__links__link" href="#" target="_blank">Weather<img className="projects__section__project__links__img img-weather" src={WeatherImg} alt="site d'une application météo." /></p>
           </Fade>
         </div>
       </div>
