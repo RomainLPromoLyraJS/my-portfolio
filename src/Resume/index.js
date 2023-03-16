@@ -3,7 +3,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import ResumeLink from '../assets/resume';
+import ResumeLink from '../assets/resume/CV-Romain-Lafosse-2023.pdf';
 
 const Resume = () => {
   return (
