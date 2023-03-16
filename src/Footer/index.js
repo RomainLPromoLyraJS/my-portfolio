@@ -21,7 +21,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer__folio">
-          <p className="footer__folio__text">Portfolio - 2021</p>
+          <p className="footer__folio__text">Portfolio - 2023</p>
         </div>
       </div>
     </footer>
