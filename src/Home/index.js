@@ -18,7 +18,7 @@ const Home = () => {
       <div className="home__title__specialisation">
         <div className="home__title__specialisation__content">
           <Fade left>
-            <h1 className="home__title__specialisation__content__text">Développeur Javascript Fullstack spécialisé en ReactJS.</h1>
+            <h1 className="home__title__specialisation__content__text">Développeur Javascript Front-End spécialisé en ReactJS.</h1>
           </Fade>
         </div>
         <div className="home__title__specialisation__content__img">
